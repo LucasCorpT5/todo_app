@@ -16,7 +16,7 @@
           <dd>{{ contato.email }}</dd>
 
           <dt>Data criação</dt>
-          <dd>20/04/1990</dd>
+          <dd>{{ contato.data_criacao|date:'d/m/Y' }}</dd>
 
           <dt>Categoria</dt>
           <dd>{{ contato.categoria }}</dd>
