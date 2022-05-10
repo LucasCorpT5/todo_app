@@ -5,6 +5,9 @@ from django.utils import timezone
 class Categoria(models.Model):
     nome = models.CharField(max_length=255)
 
+    def __str__(self):
+        return self.nome
+
 class Contato(models.Model):
     # blank=True significa que o campo não é obrigatorio
     nome = models.CharField(max_length=255)
